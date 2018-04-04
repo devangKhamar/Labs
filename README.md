@@ -21,3 +21,15 @@ The project implements a simple recursive descent parser to construct a syntax t
 the syntax tree to construct the ROBDD.
 
 Traveling Tournament Simulated Annealing Alogrithm - made fair, Lab2:
+
+In this Lab we try to solve the placement and routing problem in
+the form of a traveling tournament problem for Major League Baseball. The task at hand is to construct a schedule that would
+optimize the tournament games such that the total distance traveled by all the teams throughout the tournament is minimal. 
+This is similar to the problem in EDA domain as the distance traveled by the teams is similar to the length of interconnects 
+and the schedule represents the path taken by the interconnects to connect all the modules (or teams for the TTP). 
+The assumption of this instance of the problem is that the location of the games are fixed which means we assume the modules 
+have been placed, interconnects are pending.
+
+The code takes as input a file constining the travelling distance between game-locations and attempts to find an optimal 
+(or near optimal) travel schedule for all teams in the tournament.
+
