@@ -2,6 +2,8 @@
 
 EDA Lab Work
 
+Reduced Order Binary Decision Diagrams, Lab-1:
+
 ROBDDs are a data structure that can be used to represent combinational circuits. It models a combinational circuit as a graph. 
 ROBDDs allow easy evaluation of the combinational circuit and also allow for various tests to be conducted on the circuit such
 as testing for satisfiability, checking for number of inpts that satisfy a given circuit and performing these tests for a 
@@ -17,3 +19,5 @@ The code takes as input a boolean expression of the following format:
 
 The project implements a simple recursive descent parser to construct a syntax tree for the boolean expression and then uses 
 the syntax tree to construct the ROBDD.
+
+Traveling Tournament Simulated Annealing Alogrithm - made fair, Lab2:
