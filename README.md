@@ -20,6 +20,9 @@ The code takes as input a boolean expression of the following format:
 The project implements a simple recursive descent parser to construct a syntax tree for the boolean expression and then uses 
 the syntax tree to construct the ROBDD.
 
+
+
+
 Traveling Tournament Simulated Annealing Alogrithm - made fair, Lab2:
 
 In this Lab we try to solve the placement and routing problem in
