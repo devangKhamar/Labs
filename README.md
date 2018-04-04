@@ -30,6 +30,6 @@ and the schedule represents the path taken by the interconnects to connect all t
 The assumption of this instance of the problem is that the location of the games are fixed which means we assume the modules 
 have been placed, interconnects are pending.
 
-The code takes as input a file constining the travelling distance between game-locations and attempts to find an optimal 
+The code takes as input a file containning the travel distance between game-locations and attempts to find an optimal 
 (or near optimal) travel schedule for all teams in the tournament.
 
