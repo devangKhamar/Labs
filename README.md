@@ -36,3 +36,6 @@ have been placed, interconnects are pending.
 The code takes as input a file containning the travel distance between game-locations and attempts to find an optimal 
 (or near optimal) travel schedule for all teams in the tournament.
 
+Formal Verification of a Radix-4 16-bit Booth Multiplier using the EBMC model checker Lab-3:
+
+This lab gave us the opportunity to get our hands dirty with a Formal Verification tool. A simple radix-4 booth multiplier was chosen. A Booth multiplier is a clever logic-circuit that helps perform signed-multiplication. The Booth recoding logic with High-Radix operations allows for relatively faster multiplication (not single cycle, but better than a typical shift-add multiplier). The Intersting thing in this is the formal verification tool EBMC (developed by Oxford University: http://www.cprover.org/ebmc/). The main caveat of the booth Multiplier is that it needs an extra-bit (or 2 for radix 4) to succesfully perform multiplication for all the signed numbers under the given (8/16) bit resolution. THis very case was pointed out by the Model Checker. The code has been written in System Verilog and the properties for verification have been written as System Verilog assertions. Running the code would require downloading the EBMC tool separately. Powershell scripts have been provided to execute tests for both 8 & 16-bit Multipliers.
