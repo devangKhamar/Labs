@@ -1,0 +1,24 @@
+Note, to cehck execution time in powershell script, you will have to first open powershell in admin mode and execute:
+"Set-ExecutionPolicy -ExecutionPolicy RemoteSigned"
+then run "Measure-command{.\mul8.ps1}". Outputs (success/failure) do not get printed.
+Navigate to the folder containing the tool and the modules. Then enter (any of) the following
+commands in powershell, the first checks properties mentioned in bboth module, the second checks
+properties mentioned int the recodeLogic module and the third checks properties mentioned in the 
+add_subtract module:
+
+
+### for 8-bit multiplier
+
+./ebmc booth_8.sv --top booth --k-induction --bound 18 --reset reset==1
+
+./ebmc booth_8.sv --top recodeLogic --bdd 
+
+./ebmc booth_8.sv --top add_subtract --bdd 
+
+### for 16-bit multiplier
+
+./ebmc booth_16.sv --top booth --k-induction --reset reset==1
+
+./ebmc booth_16.sv --top recodeLogic --bdd 
+
+./ebmc booth_16.sv --top add_subtract --bdd 
